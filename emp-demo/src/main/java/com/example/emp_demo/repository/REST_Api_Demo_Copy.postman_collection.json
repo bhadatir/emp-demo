@@ -1,0 +1,1285 @@
+{
+  "info": {
+    "_postman_id": "67c86301-a202-4a28-8ca5-a8eb0f3e1aa5",
+    "name": "REST Api Demo Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "login",
+      "id": "4f041c49-96a0-45e2-926b-253c05d061b5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "3c583160-a6ec-4ad8-97b6-9719fb5a0d76",
+          "name": "login",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Set-Cookie",
+              "value": "AUTH-TOKEN=secret_dummy_token_123; Max-Age=3600; Expires=Mon, 02 Feb 2026 18:27:15 GMT; Path=/; HttpOnly"
+            },
+            {
+              "key": "Content-Type",
+              "value": "text/plain;charset=UTF-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "29"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:27:15 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:27:38.243Z",
+          "body": "Login Successful! Cookie set."
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "bab8a9b3-9130-4b4f-971c-90ff8e1efe95",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"demo3\",\r\n  \"lastName\": \"3\",\r\n  \"email\": \"demo9@gmail.com\",\r\n  \"department\": \"HR\",\r\n  \"salary\": -150000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "7ffeac12-abe0-4ae1-9ed0-04098add1d75",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"shree\",\r\n  \"lastName\": \"hari\",\r\n  \"email\": \"hari@gmail.com\",\r\n  \"department\": \"IT\",\r\n  \"salary\": 50000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 15:05:16 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T15:05:19.851Z",
+          "body": "{\n    \"id\": 1,\n    \"firstName\": \"shree\",\n    \"lastName\": \"hari\",\n    \"email\": \"hari@gmail.com\",\n    \"department\": \"IT\",\n    \"salary\": 50000,\n    \"profileImageUrl\": null\n}"
+        },
+        {
+          "id": "639d2d8b-2c43-455e-8342-26aaf0a55782",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"jay\",\r\n  \"lastName\": \"swaminarayan\",\r\n  \"email\": \"swaminarayan@gmail.com\",\r\n  \"department\": \"HR\",\r\n  \"salary\": 150000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 15:13:09 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T15:13:10.807Z",
+          "body": "{\n    \"id\": 2,\n    \"firstName\": \"jay\",\n    \"lastName\": \"swaminarayan\",\n    \"email\": \"swaminarayan@gmail.com\",\n    \"department\": \"HR\",\n    \"salary\": 150000,\n    \"profileImageUrl\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "ca3b75c6-3fb9-469c-9a80-c16cd93178b4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "e66f80ce-4631-4051-ae1e-e1592f6864c5",
+              "src": [
+                "postman-cloud:///1f1003f8-17f9-4dc0-82b4-11fe585bd543"
+              ]
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/employees/1/image",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "1",
+            "image"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "250a485c-4b5b-490e-b626-8ecc22e31afa",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "uuid": "e66f80ce-4631-4051-ae1e-e1592f6864c5",
+                  "src": [
+                    "postman-cloud:///1f1003f8-17f9-4dc0-82b4-11fe585bd543"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees/1/image",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "1",
+                "image"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain;charset=UTF-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "71"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 15:06:26 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T15:06:28.464Z",
+          "body": "Image uploaded successfully: uploads/1_Screenshot 2026-01-19 173749.png"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "72e550af-3246-41a3-a87d-02c6088dd358",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/1/image",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "1",
+            "image"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "id": "98bc5130-3adf-4b42-9c11-db02aa872206",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/version-demo/v1/employee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "version-demo",
+            "v1",
+            "employee"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "56230c01-20a0-4f94-9e4a-38e1ade3eea8",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/version-demo/v1/employee",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "version-demo",
+                "v1",
+                "employee"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain;charset=UTF-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "32"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:35:20 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:35:23.084Z",
+          "body": "Accessed via URI Versioning (v1)"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "b50fe74f-5296-43c9-b037-18f72068db70",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/version-demo/param?version=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "version-demo",
+            "param"
+          ],
+          "query": [
+            {
+              "key": "version",
+              "value": "1",
+              "uuid": "87e8063b-9c18-4957-9918-23d20d10e376"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "a1139663-29f6-4884-b349-098ddc161b14",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/version-demo/param?version=1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "version-demo",
+                "param"
+              ],
+              "query": [
+                {
+                  "key": "version",
+                  "value": "1",
+                  "uuid": "87e8063b-9c18-4957-9918-23d20d10e376"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain;charset=UTF-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "37"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:36:03 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:36:05.297Z",
+          "body": "Accessed via Request Param Versioning"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "ed8c5f27-f6fe-4d24-9208-181f13de6995",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-API-VERSION",
+            "value": "1",
+            "type": "text",
+            "uuid": "0f84a599-3940-4829-90bf-baa7e9b60c2b"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/version-demo/header",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "version-demo",
+            "header"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "267a4fd4-95d3-421a-908c-5e8d51842736",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-VERSION",
+                "value": "1",
+                "type": "text",
+                "uuid": "0f84a599-3940-4829-90bf-baa7e9b60c2b"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/version-demo/header",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "version-demo",
+                "header"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain;charset=UTF-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "30"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:36:38 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:36:40.661Z",
+          "body": "Accessed via Header Versioning"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "1561dd57-f313-46bd-b2d2-8aee455a5df2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "fdc4b9d2-448f-473f-b31d-ce1cd38f9257",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/employees/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 15:12:20 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T15:12:22.879Z",
+          "body": "{\n    \"id\": 1,\n    \"firstName\": \"shree\",\n    \"lastName\": \"hari\",\n    \"email\": \"hari@gmail.com\",\n    \"department\": \"IT\",\n    \"salary\": 50000,\n    \"profileImageUrl\": \"uploads/1_Screenshot 2026-01-19 173749.png\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "d0cce700-0a9b-4b73-b204-89c37b910050",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "0d992f7d-863a-4716-9c35-3c7daa841f18",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/employees",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 15:13:28 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T15:13:31.401Z",
+          "body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"shree\",\n        \"lastName\": \"hari\",\n        \"email\": \"hari@gmail.com\",\n        \"department\": \"IT\",\n        \"salary\": 50000,\n        \"profileImageUrl\": \"uploads/1_Screenshot 2026-01-19 173749.png\"\n    },\n    {\n        \"id\": 2,\n        \"firstName\": \"jay\",\n        \"lastName\": \"swaminarayan\",\n        \"email\": \"swaminarayan@gmail.com\",\n        \"department\": \"HR\",\n        \"salary\": 150000,\n        \"profileImageUrl\": null\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "ad0a2af6-1b9b-4c3a-9e9b-bb24f2cd4dcb",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/4/demo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "4",
+            "demo"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "0f268eb3-ecff-4729-81e8-eb2c9740fd4e",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/employees/4/demo",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "4",
+                "demo"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:38:55 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:38:57.442Z",
+          "body": "{\n    \"id\": 4,\n    \"firstName\": \"dem\",\n    \"lastName\": \"1e1\",\n    \"email\": \"demo8@gmail.com\",\n    \"department\": \"demo\",\n    \"salary\": 1500001,\n    \"profileImageUrl\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "09a5a440-c486-43cd-bb09-2a31682978d9",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"dem\",\r\n  \"lastName\": \"1e1\",\r\n  \"email\": \"demo8@gmail.com\",\r\n  \"department\": \"HR1\",\r\n  \"salary\": 1500001\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/employees/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "4"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "be26e2d2-e07b-4a5c-a0ab-bc307e60087e",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"demo1\",\r\n  \"lastName\": \"11\",\r\n  \"email\": \"demo1@gmail.com\",\r\n  \"department\": \"HR1\",\r\n  \"salary\": 1500001\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 15:15:50 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T15:15:52.209Z",
+          "body": "{\n    \"id\": 3,\n    \"firstName\": \"demo1\",\n    \"lastName\": \"11\",\n    \"email\": \"demo1@gmail.com\",\n    \"department\": \"HR1\",\n    \"salary\": 1500001,\n    \"profileImageUrl\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "994be922-6886-4c56-a91f-4b5f990ae166",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "3"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "4f7d1beb-d7f3-4f1f-8b85-0a618e4a7ef1",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/employees/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain;charset=UTF-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "29"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 15:17:04 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T15:17:05.742Z",
+          "body": "Employee deleted successfully"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "37ab55c4-5c52-4171-b368-8736d81f7303",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "1fd5289a-afcd-466b-9143-5f4cb7f1674e",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/employees/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:20:10 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:20:17.501Z",
+          "body": "{\n    \"id\": 1,\n    \"firstName\": \"shree\",\n    \"lastName\": \"hari\",\n    \"email\": \"hari@gmail.com\",\n    \"department\": \"IT\",\n    \"salary\": 50000,\n    \"profileImageUrl\": \"uploads/1_Screenshot 2026-01-19 173749.png\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "77c78e8b-a557-4f39-9453-53346e664264",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/dto-demo/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "dto-demo",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "faa7c454-3380-40f7-a5e4-aee8a11cad54",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/employees/dto-demo/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "dto-demo",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:20:45 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:20:48.632Z",
+          "body": "{\n    \"id\": 1,\n    \"firstName\": \"shree\",\n    \"lastName\": \"hari\",\n    \"email\": \"hari@gmail.com\",\n    \"department\": \"IT\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "9c9d3e88-63af-4e5e-a096-426a85d72c3c",
+      "request": {
+        "method": "HEAD",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "8a5a2a71-8809-4647-aaa8-2ff3bee9a37e",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "HEAD",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/employees/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:32:55 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:33:04.459Z",
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "id": "85b49aee-2e37-4901-9666-f7ba21ffca9a",
+      "request": {
+        "method": "OPTIONS",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "3398a829-4a87-4a86-a83c-e6c4f2a9d744",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "OPTIONS",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/employees",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Allow",
+              "value": "POST,GET,HEAD,OPTIONS"
+            },
+            {
+              "key": "Accept-Patch",
+              "value": ""
+            },
+            {
+              "key": "Content-Length",
+              "value": "0"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Feb 2026 17:33:46 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-02-02T17:33:54.055Z",
+          "body": null
+        }
+      ]
+    }
+  ]
+}
