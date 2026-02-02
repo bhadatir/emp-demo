@@ -49,7 +49,6 @@ public class AuthFilter extends OncePerRequestFilter {
         }
     }
 
-    // Optional: Use this to strictly prevent the filter from applying to specific paths at the framework level
     @Override
     protected boolean shouldNotFilter(@NonNull HttpServletRequest request) {
         String path = request.getRequestURI();
